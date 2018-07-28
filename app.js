@@ -17,7 +17,6 @@ var postRoutes    = require('./routes/posts.js');
 var indexRoutes         = require('./routes/index.js');
 
 
-//mongoose.connect("mongodb://alzz:operations99@ds139879.mlab.com:39879/gymconfessions")
 mongoose.connect(process.env.DATABASEURL);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
